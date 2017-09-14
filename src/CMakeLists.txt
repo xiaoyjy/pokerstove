@@ -33,7 +33,7 @@ add_subdirectory(ext/googletest)
 find_library(gtest REQUIRED)
 include_directories(${GTEST_INCLUDE_DIRS})
 link_directories(${GTEST_LIBS_DIR})
-add_definitions ("-fPIC")
+add_definitions ("-fPIC -std=c++11")
 enable_testing()
 
 # check_function_exists does not work for builtins, so use try_compile.
