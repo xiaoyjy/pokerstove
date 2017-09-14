@@ -34,7 +34,7 @@ vector<string> get_all_hands()
     vector<string> all_pairs;
     for(int i = 0; i < card_len; i++)
     {
-        for(int j = 0; j < i; j++)
+        for(int j = i+1; j < card_len; j++)
         {
             // std::cout << all_cards[i] << all_cards[j] << std::endl;
             all_pairs.emplace_back(all_cards[i] + all_cards[j]);
